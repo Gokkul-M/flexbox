@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flomic Logistics Pvt. Ltd</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; 
+        }
+
+        .top-bar {
+            background-color: #444; 
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar .contact-info a{
+            text-decoration: none;
+            color: #ffffff; 
+        }
+
+        .top-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .logo-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 2px solid #76c043; 
+        }
+
+        .logo img {
+            height: 50px; 
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li select{
+            border: none;
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333; 
+            font-weight: bold;
+        }
+
+        .articles-section, .bottom-cards {
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .bottom-cards a{
+            justify-content: space-between;
+        }
+        .content-section{
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card{
+            background-color: #333; 
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            flex: 1;
+            max-width: 300px;
+            line-height: 40px;
+            max-height: 700px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .card-1{
+            background-color: #333; 
+            color: white;
+            padding: 30px;
+            border-radius: 5px;
+            display: flex;
+            flex: 1;
+            max-width: 454px;
+            line-height: 30px;
+            max-height: 800px;
+            margin: 10px;
+            text-align: center;
+        }
+        .card-1 a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: auto;
+            margin-right: 70px;
+        }
+
+        .card p ,.card h3{
+            padding: 20px;
+        }
+        .card-1 p ,.card-1 h3{
+            padding: 20px;
+            margin-left: 0px;
+        }
+
+        .card button,.card-1 button{
+            background-color: #76c043;
+            padding: 10px;
+            margin-top: auto;
+            margin-bottom: 20px;
+        }
+
+        .main-article {
+            background-color: #333; 
+            color: white;
+            padding: 20px;
+            max-width: 550px;
+            line-height: 40px;
+            max-height: 1500px;
+            border-radius: 5px;
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+        .main-article h3{
+            padding-top: 150px;
+        }
+        .side-article{
+            background-color: #333; 
+            color: white;
+            padding: 20px;
+            max-width: 400px;
+            line-height: 40px;
+            max-height: 700px;
+            border-radius: 5px;
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .main-article a, .side-article a {
+            color: #76c043; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: #222; 
+            color: #ccc;
+        }
+
+        .footer-column {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer-column ul{
+            list-style-type: none;
+            line-height: 30px;
+        }
+        .footer-column ul :hover{
+            color: aqua;
+        }
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .footer-column input{
+            border-radius: 4px;
+            padding: 5px;
+            margin-bottom: 1em;
+        }
+        .footer-column button{
+            border-radius: 4px;
+            padding: 5px;
+            padding-right: 10px;
+            padding-right: 10px;
+            font-size: 10px;
+        }
+
+        .footer-column h5 {
+            color: #76c043; 
+            margin-bottom: 20px;
+        }
+
+        .footer-bottom {
+            background-color: #111;
+            text-align: center;
+            padding: 20px;
+            color: #888;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+                <a href="#">Link 5</a>
+            </div>
+            <div class="top-links">
+                <p>&#9742; +00 (123) 456 7890 | info@domain.com</p>
+            </div>
+        </div>
+        <div class="logo-nav">
+            <div class="logo">
+                <img src="logo-placeholder.png" alt="Flomic Logistics Pvt. Ltd">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><select><option>Dropdown</option></select></li>
+                    <li><a href="#">Link Text</a></li>
+                    <li><a href="#">Link Text</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="card">
+                <h3>QUISQUE VEHICULA URNA AMET</h3>
+                <p>ullamcorper mauris sit amet sed eget ultrices sem proin quis lacus egestas</p>
+                <button type="button">Read More</button>
+            </div>
+            <div class="card">
+                <h3>ALIQUAM PURUS URNA PORTA FAUCIBUS</h3>
+                <p>ullamcorper mauris sit amet sed eget ultrices sem proin quis lacus egestas</p>
+                <button type="button">Read More</button>
+            </div>
+            <div class="card">
+                <h3>PROIN ULTRICES DUI LEO EGESTAS AUGUE</h3>
+                <p>ullamcorper mauris sit amet sed eget ultrices sem proin quis lacus egestas</p>
+                <button type="button">Read More</button>
+            </div>
+        </section>
+
+        <section class="articles-section">
+            <div class="main-article">
+                <img src="image/main.jpg" alt="image" style="margin: auto; padding: 130px;padding-bottom: 200px; border-radius: 7px; background-color: #f8f8f8;">
+                <h3>URNA SIT AMET PULVINAR</h3>
+                <p>Aenean semper elementum tellus, ut placerat leo. Quisque vehicula, urna sit amet...</p>
+                <a href="#">READ MORE »</a>
+            </div>
+            <div class="side-articles">
+                <div class="side-article">
+                    <h4>PHASELLUS MASSA FELIS IN</h4>
+                    <p>By A Name  |  Friday, 6 April 2045</p>
+                    <p>Aenean semper elementum tellus, ut placerat leo. Quisque vehicula...</p>
+                    <a href="#">READ MORE »</a>
+                </div>
+                <div class="side-article">
+                    <h4>MORBI CONSECTETUR NISI</h4>
+                    <p>By A Name  |  Friday, 6 April 2045</p>
+                    <p>Aenean semper elementum tellus, ut placerat leo. Quisque vehicula...</p>
+                    <a href="#">READ MORE »</a>
+                </div>
+                <div class="side-article">
+                    <h4>PROIN ULTRI FEUGIAT VITAE</h4>
+                    <p>By A Name  |  Friday, 6 April 2045</p>
+                    <p>Aenean semper elementum tellus, ut placerat leo. Quisque vehicula...</p>
+                    <a href="#">READ MORE »</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom-cards">
+            <div class="card-1">
+                <img src="image/1.jpg" alt="Read More" style="padding: 60px; background-color: #888;">
+                <h4>Advanced Cargo Tracking Systems</h4>
+                <a href="#">READ MORE »</a>
+            </div>
+            <div class="card-1">
+                <img src="image/1.jpg" alt="Read More" style="padding: 60px; background-color: #888;">
+                <h4>Expanding Our Global Reach</h4>
+                <a href="#">READ MORE »</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h5>LOREM IPSUM DOLOR</h5>
+                <p>Donec sed ultrices eros. Nulla facilisi. Aliquam purus urna, porta non faucibus nec, luctus vitae ante...</p>
+                <p>Street Name & Number, Town, Postcode/Zip</p>
+                <p>+00 (123) 456 7890 | info@domain.com</p>
+            </div>
+            <div class="footer-column">
+                <h5>QUICK LINKS</h5>
+                <ul>
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5>KEEP IN TOUCH</h5>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2015 - All Rights Reserved - Flomic</p>
+        </div>
+    </footer>
+</body>
+</html>
